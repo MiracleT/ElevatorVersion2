@@ -5,13 +5,13 @@ package v3;
 public class eMain {
 	public static void main(String[] args) {
 		
-		Building EverGreenApartments=new Building();
+		BuildingElevatorFacade EverGreenApartments=new BuildingElevatorFacade();
 		
-		EverGreenApartments.requestLift(3,0);
-		EverGreenApartments.requestLift(5,0);
-		EverGreenApartments.requestLift(2,5);
-		EverGreenApartments.requestLift(3,0);
-		EverGreenApartments.requestLift(0,4);
+		EverGreenApartments.requestElevator(3,0);
+		EverGreenApartments.requestElevator(5,0);
+		EverGreenApartments.requestElevator(2,5);
+		EverGreenApartments.requestElevator(3,0);
+		EverGreenApartments.requestElevator(0,4);
 		
 	}
 }
