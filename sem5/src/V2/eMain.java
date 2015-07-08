@@ -7,10 +7,11 @@ public class eMain {
 		
 		Building EverGreenApartments=new Building();
 		
-		EverGreenApartments.requestLift(5,3);
-		EverGreenApartments.requestLift(5,1);
-		EverGreenApartments.requestLift(1,2);
-		EverGreenApartments.requestLift(1,4);
+		EverGreenApartments.requestLift(3,0);
+		EverGreenApartments.requestLift(5,0);
+		EverGreenApartments.requestLift(2,5);
+		EverGreenApartments.requestLift(3,0);
+		EverGreenApartments.requestLift(0,4);
 		
 	}
 }

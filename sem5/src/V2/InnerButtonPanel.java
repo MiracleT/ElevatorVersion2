@@ -17,7 +17,7 @@ public class InnerButtonPanel extends Buttons{
 
 	@Override
 	void push(int floorNum) {	
-		System.out.println("Taking you to floor number "+floorNum);
+		System.out.println("You pressed button "+floorNum);
 		e1.getTo(floorNum);									//ones the button is pressed,take the user to that floor..>get the elevator moving
 	}
 }

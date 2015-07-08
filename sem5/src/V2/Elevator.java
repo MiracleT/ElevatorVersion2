@@ -20,18 +20,18 @@ public class Elevator {
 		int beginat = this.getCurrentLocation();
 
 		if(beginat==from)
-			System.out.println("Liftt At Floor "+this.getCurrentLocation()+" itself");
+			System.out.println("Elevator At Floor "+this.getCurrentLocation()+" itself");
 		
 		else if(this.getCurrentLocation()<from){
 			for(int i=beginat;i<=from;i++){
 				this.setCurrentLocation(i);
-				System.out.println("Floor "+this.getCurrentLocation());
+				System.out.println("\tFloor "+this.getCurrentLocation());
 			}
 		}
 		else if(this.getCurrentLocation()>from){
 			for(int i=beginat;i>=from;i--){
 				this.setCurrentLocation(i);
-				System.out.println("Floor "+this.getCurrentLocation());
+				System.out.println("\tFloor "+this.getCurrentLocation());
 			}
 		}
 		elevatorDoor.open("Elevator");         //once you reach the destination open the Elevatordoor
@@ -53,7 +53,7 @@ public class Elevator {
 		arrayPanel[4] = b4;
 		arrayPanel[5] = b5;
 		
-		System.out.print("Inside lift-Panel: ");
+		System.out.print("Inside lift-Panel: \t");
 		for(int i=0;i<=totalFloors;i++)
 			System.out.print(arrayPanel[i].buttonVal+" ");
 	}
