@@ -4,7 +4,7 @@ package v3;
 
 
 public abstract class Buttons {
-	Elevator e1=new Elevator();
+	Elevator e1=Elevator.getInstance();	
 	abstract void push(int floorNum);
 
 }

@@ -5,7 +5,8 @@ package v3;
 public class Building {
 		
 	int TotalFloors=5;
-	Elevator e1=new Elevator();
+	Elevator e1=Elevator.getInstance();												//implementing singleton pattern
+	
 	Floors f0 = new Floors(0);
 	Floors f1 = new Floors(1);
 	Floors f2 = new Floors(2);
@@ -16,8 +17,7 @@ public class Building {
 	
 
 	//function to manage the elevator
-	
-	
+
 	public int requestLift(int from,int to) {
 		System.out.println("Calling Elevator to floor "+from+" Lift is currently at floor "+e1.getCurrentLocation());
 		

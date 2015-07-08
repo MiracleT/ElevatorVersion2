@@ -2,7 +2,7 @@ package v3;
 
 public class Floors {
 	
-	Elevator e=new Elevator();
+	Elevator e1=Elevator.getInstance();	
 	int floorNum;
 	Door floorDoor=new Door();
 	CallLiftButton pressToCall = new CallLiftButton();

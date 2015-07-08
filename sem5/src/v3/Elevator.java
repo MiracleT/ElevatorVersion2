@@ -1,7 +1,11 @@
 package v3;
 
-public class Elevator {
+//Design pattern 1:singleton pattern-------------->only one elevator per building
 
+
+public class Elevator {
+	
+	private static Elevator instance;
 	static int currentLocation;
 	Door elevatorDoor=new Door();
 	InnerButtonPanel[] arrayPanel = new InnerButtonPanel[6];
@@ -15,6 +19,20 @@ public class Elevator {
 		Elevator.currentLocation = currentLocation;
 	}
 
+//singleton pattern
+	private Elevator(){
+		
+	}
+	
+	public static Elevator getInstance() {
+		if(instance == null)
+			instance = new Elevator();
+		return instance;
+	}
+	
+	
+	
+	
 //to monitor elevator movement
 	void getTo(int from){
 		int beginat = this.getCurrentLocation();
