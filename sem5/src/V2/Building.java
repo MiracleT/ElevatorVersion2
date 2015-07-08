@@ -18,7 +18,7 @@ public class Building {
 	//function to manage the elevator
 	
 	
-	public void requestLift(int from,int to) {
+	public int requestLift(int from,int to) {
 		System.out.println("Calling Elevator to floor "+from+" Lift is currently at floor "+e1.getCurrentLocation());
 		
 		arrayFloors[from].pressToCall.push(arrayFloors[from].floorNum);              //press the button on the respective floor to call the lift to your location 
@@ -44,7 +44,6 @@ public class Building {
 		
 		System.out.println("^^^^^^^^^^^^^^^^^^REQUEST SERVICED^^^^^^^^^^^^^^^^^^\n ");
 		
-	return;
-	
+		return Elevator.currentLocation;
 	}
 }
