@@ -4,9 +4,9 @@ package v3;
 public class CallLiftButton extends Buttons{
 
 	void push(int floorNum) {
-		System.out.println("Elevator Coming to you");
+		System.out.println(".   Button pressed to Call Elevator!");
 		e1.getTo(floorNum);								//since button pressed,get the elevator moving to pick up the user
-		
+
 	}
 
 }

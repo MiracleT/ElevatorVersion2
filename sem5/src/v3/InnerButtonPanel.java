@@ -1,7 +1,7 @@
 package v3;
 
 public class InnerButtonPanel extends Buttons{
-	int buttonVal;
+
 
 	public InnerButtonPanel(int buttonVal) {
 		this.buttonVal = buttonVal;
@@ -18,6 +18,6 @@ public class InnerButtonPanel extends Buttons{
 	@Override
 	void push(int floorNum) {	
 		System.out.println("You pressed button "+floorNum);
-		e1.getTo(floorNum);									//ones the button is pressed,take the user to that floor..>get the elevator moving
+		e1.getTo(floorNum);						//ones the button is pressed,take the user to that floor..>get the elevator moving
 	}
 }
