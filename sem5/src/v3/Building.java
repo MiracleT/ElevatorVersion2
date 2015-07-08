@@ -22,12 +22,12 @@ public class Building {
 		System.out.println("Calling Elevator to floor "+from+" Lift is currently at floor "+e1.getCurrentLocation());
 		
 		arrayFloors[from].pressToCall.push(arrayFloors[from].floorNum);              //press the button on the respective floor to call the lift to your location 
-		arrayFloors[from].floorDoor.open("Floor");									//Open the floor door at the elevator entrance
+		arrayFloors[from].floorDoor.Switch("Floor");									//Open the floor door at the elevator entrance
 		
 		System.out.println("*******************************************\nI enter in at floor "+from+"!");
 		
-		e1.elevatorDoor.close("Elevator");											//Close the elevator door
-		arrayFloors[from].floorDoor.close("Floor");									//close the floor door from where you just entered the elevator
+		e1.elevatorDoor.Switch("Elevator");											//Close the elevator door
+		arrayFloors[from].floorDoor.Switch("Floor");									//close the floor door from where you just entered the elevator
 		
 		System.out.println("*******************************************\n ");
 		
@@ -37,10 +37,10 @@ public class Building {
 		
 		System.out.println("*******************************************\n ");
 		
-		arrayFloors[from].floorDoor.open("Floor");									//open the destination floor door when the lift reaches there
+		arrayFloors[from].floorDoor.Switch("Floor");									//open the destination floor door when the lift reaches there
 		System.out.println("I get off at floor "+to);								
-		arrayFloors[from].floorDoor.close("Floor");									//floor door closes
-		e1.elevatorDoor.close("Elevator");											//elevator door closes
+		arrayFloors[from].floorDoor.Switch("Floor");									//floor door closes
+		e1.elevatorDoor.Switch("Elevator");											//elevator door closes
 		
 		System.out.println("^^^^^^^^^^^^^^^^^^REQUEST SERVICED^^^^^^^^^^^^^^^^^^\n ");
 		

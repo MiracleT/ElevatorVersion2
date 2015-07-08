@@ -4,7 +4,9 @@ public class Floors {
 	
 	Elevator e1=Elevator.getInstance();	
 	int floorNum;
-	Door floorDoor=new Door();
+	DoorContext floorDoor = new DoorContext(new Close());
+	//floorDoor.Switch();
+	
 	CallLiftButton pressToCall = new CallLiftButton();
 
 	public Floors(int floorNum) {

@@ -7,7 +7,10 @@ public class Elevator {
 	
 	private static Elevator instance;
 	static int currentLocation;
-	Door elevatorDoor=new Door();
+	//Door elevatorDoor=new Door();
+	DoorContext elevatorDoor=new DoorContext(new Close());
+	//elevatorDoor.Switch();
+	
 	InnerButtonPanel[] arrayPanel = new InnerButtonPanel[6];
 
 //getter - setter
@@ -52,7 +55,7 @@ public class Elevator {
 				System.out.println("\tFloor "+this.getCurrentLocation());
 			}
 		}
-		elevatorDoor.open("Elevator");         //once you reach the destination open the Elevatordoor
+		elevatorDoor.Switch("Elevator");         //once you reach the destination open the Elevatordoor
 
 	}
 
